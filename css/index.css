@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.manconm {
+  height: 100vh;
+  background-image: linear-gradient(to left bottom,
+      rgba(24, 187, 86, 0.267),
+      rgba(219, 52, 52, 0.568)),
+    url(../media/love_couple-normal.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+}
+
+.hompag {
+  text-align: center;
+}
+
+.hompag h1 {
+  font-size: 4rem;
+  color: azure;
+
+}
+
+.hompag button {
+  width: fit-content;
+  padding: 10px 15px;
+  background-color:crimson;
+  color: aliceblue;
+  transition: 0.5s;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 50px;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.hompag button:hover {
+  background-color:rgb(110, 16, 35);
+
+}
+
+.scondiv {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  z-index: 100;
+}
+
+.inf {
+  /* background-image: url(../media/ss.jpg); */
+  background-color: rgba(255,255,255,.5);
+  background-size: 100%;
+  padding: 20px;
+  max-width: 600px;
+  border-radius: 10px;
+  position: relative;
+}
+
+
+.lable{
+  margin-bottom: 0;
+}
+
+.act {
+  transform: translateY(0px);
+  opacity: 1;
+  animation: move 1s linear;
+}
+
+@keyframes move {
+
+  0% {
+    transform: translateY(-150px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(-0px);
+    opacity: 1;
+  }
+}
+
+.unact {
+
+  transform: translateY(-150px);
+  opacity: 0;
+  animation: actremo 1s linear;
+}
+
+@keyframes actremo {
+
+  0% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-150px);
+    opacity: 0;
+  }
+}
+
+.titandicon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: crimson;
+  font-size: 2rem;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+.titandicon i {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.inpt1 {
+  width: 100%;
+  padding: 10px 5px;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+.divInpu{
+  margin-bottom: 20px;
+}
+
+.butt2 {
+  width: 100%;
+  padding: 10px 5px;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  background-color:crimson;
+  color: aliceblue;
+  transition: .5s;
+}
+.butt2:hover {
+  
+  background-color:rgb(75, 4, 18);
+
+}
+
+@media (max-width: 772px) {
+  .hompag h1 {
+    font-size: 2remrgb(78, 13, 26);
+    color: azure;
+    padding: 0 10px;
+  }
+
+  .hompag button {
+    margin-top: 20px;
+    font-size: 1rem;
+  }
+
+  .inf {
+    width: 300px;
+  }
+}
